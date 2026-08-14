@@ -2,6 +2,8 @@
 
 一个开源的 ESP32-S3 LED 矩阵播放方案：把视频、GIF、像素画变成 8x8 灯板上的流动光影。支持 WiFi 实时推流和 Flash 存储循环播放双模式，配有桌面端控制软件与完整 Python 工具链。
 
+> **立创开源硬件平台**：[oshwhub.com/rolling_39/project_uotswyln](https://oshwhub.com/rolling_39/project_uotswyln) — 电路设计 / 硬件清单 / 打板文件
+
 ---
 
 ## ⚠️ 重要：硬件差异说明
