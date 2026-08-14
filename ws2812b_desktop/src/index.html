@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="background:transparent!important">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>WS2812B Player</title>
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+<body style="background:transparent!important">
+    <div class="app">
+        <header class="titlebar" data-tauri-drag-region>
+            <span class="titlebar-title">WS2812B Player</span>
+            <div class="titlebar-controls">
+                <button class="tb-btn" id="tbMin" title="最小化">-</button>
+                <button class="tb-btn" id="tbMax" title="最大化">+</button>
+                <button class="tb-btn tb-close" id="tbClose" title="关闭">x</button>
+            </div>
+        </header>
+
+        <div class="app-body">
+            <aside class="sidebar">
+                <nav class="sidebar-nav" id="sidebarNav">
+                    <button class="nav-item active" data-panel="realtime"><span class="nav-icon">▶</span> 实时播放</button>
+                    <button class="nav-item" data-panel="export"><span class="nav-icon">⇩</span> 导出 .w28</button>
+                    <button class="nav-item" data-panel="upload"><span class="nav-icon">⇧</span> 上传管理</button>
+                    <button class="nav-item" data-panel="editor"><span class="nav-icon">✎</span> 像素编辑</button>
+                    <button class="nav-item" data-panel="settings" style="margin-top:auto;"><span class="nav-icon">⚙</span> 设置</button>
+                </nav>
+                <div class="sidebar-footer">© Rolling</div>
+            </aside>
+            <main class="content" id="content"></main>
+        </div>
+    </div>
+    <div id="logFloater" class="log-floater" title="日志" onclick="document.querySelector('[data-panel=settings]').click()">0</div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

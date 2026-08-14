@@ -1,0 +1,19 @@
+# ── 构建产物 ──
+node_modules/
+dist/
+target/
+.pio/
+__pycache__/
+*.pyc
+
+# ── 二进制/媒体数据 (体积大且非源码) ──
+*.w28
+firmware/data/*
+test_data/
+
+# ── 个人文件 ──
+Save_picture/
+pixel_output.w28
+
+# ── IDE 本地配置 (含绝对路径, 泄露用户名) ──
+.vscode/

@@ -1,0 +1,29 @@
+{
+  "productName": "WS2812B Player",
+  "version": "1.0.0",
+  "identifier": "com.rolling39.ws2812b-player",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:1420",
+    "beforeDevCommand": "npx vite",
+    "beforeBuildCommand": "npx vite build"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "WS2812B Player",
+        "width": 960,
+        "height": 680,
+        "minWidth": 800,
+        "minHeight": 540,
+        "decorations": false,
+        "transparent": true
+      }
+    ],
+    "security": {
+      "csp": null,
+      "assetProtocol": { "scope": ["**"] }
+    }
+  }
+}
